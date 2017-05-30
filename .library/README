@@ -1,0 +1,4 @@
+This is the directory stores R libraries.  Anything in this directory is
+ignored by GIT except this READM file.
+
+We do need the README file to otherwise GIT may not create this directory.
