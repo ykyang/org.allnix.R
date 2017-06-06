@@ -1,4 +1,4 @@
-.libPaths( c(".library", .libPaths()) )
+#.libPaths( c(".library", .libPaths()) )
 
 local({
   r <- getOption("repos")
