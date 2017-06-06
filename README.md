@@ -4,21 +4,21 @@ This README would normally document whatever steps are necessary to get your app
 
 ## Install Packages ##
 Install basic R packages to facilitate the development process
-```
+```R
 install.packages(c("devtools", "roxygen2", "testthat", "knitr"))
 ```
 [R packages](http://r-pkgs.had.co.nz/intro.html)
 
 ## Creating a Package ##
-See [R packages](http://r-pkgs.had.co.nz/package.html) for details.  
-Command line
-```r
+See [R packages](http://r-pkgs.had.co.nz/package.html) for creating packages in
+RStudio or using command line as following
+```R
 devtools::create("path/to/package/pkgname")
 devtools::create("IntroR")
 ```
 ## Testing ##
 Set up testing directory for `testthat`
-```r
+```R
 setwd("your/package/dir")
 devtools::use_testthat()
 ```
@@ -26,7 +26,7 @@ Create testing R script in `your/package/dir/tests/testthat`.  The file name mus
 start with `test`.
 
 For example create a file named `testCh3.R` in `.../tests/testthat`
-```
+```R
 test_that("length",{
   x <- 1:10
   expect_equal(length(x), 10)
