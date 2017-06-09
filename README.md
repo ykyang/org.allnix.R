@@ -14,8 +14,26 @@ See [R packages](http://r-pkgs.had.co.nz/package.html) for creating packages in
 RStudio or using command line as following
 ```R
 devtools::create("path/to/package/pkgname")
+```
+For example
+```R
 devtools::create("IntroR")
 ```
+Use RStudio to load a package project or using command line as following
+Use
+```R
+getwd()
+setwd("your/package/directory")
+```
+Load development tool and load package under developing
+```R
+library(devtools)
+load_all() # Load package
+test() # Test package
+```
+Reload the package in RStudio with `ctrl-shift-l`.
+
+to see change working directory.
 ## Testing ##
 Set up testing directory for `testthat`
 ```R
